@@ -80,15 +80,18 @@ TEMPLATES = [
 WSGI_APPLICATION = 'psc_exam.wsgi.application'
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.github.GithubOAuth2',
-    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.linkedin.LinkedinOAuth2',
+    'social_core.backends.instagram.InstagramOAuth2',
     'social_core.backends.facebook.FacebookOAuth2',
-
     'django.contrib.auth.backends.ModelBackend',
 ) 
 
 SOCIAL_AUTH_FACEBOOK_KEY = '174754617505240'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '25b6e8979180d5923e776d2986320196' 
+
+SOCIAL_AUTH_LINKEDIN_KEY = '86l74twiqxq086'
+OCIAL_AUTH_LINKEDIN_SECRET = 'CTucjudQqhJUqfK0'
+
 
 
 # Database
