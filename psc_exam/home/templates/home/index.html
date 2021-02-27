@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %} {{ title }} {% endblock %}
+{% block signupform %}  
+<div class="row m3-4 mb-3 mx-2">
+<a class="btn btn-primary " style="background-color: #3b5998; border-left: 1px solid green;" href="{% url 'home:social:begin' 'facebook' %}" role="button"
+  ><i class="fab fa-facebook-f me-2 "></i>Log in with Facebook</a>
+  </div>
+  <div class="row mb-3 mx-2">
+  <a class="btn btn-primary " style="background-color: #dd4b39" href="#!" role="button"
+  ><i class="fab fa-google me-2 "></i>Log in with Google</a>
+</div>
+<div class="row mb-3 mx-2">
+<a class="btn btn-primary" style="background-color: #0082ca" href="#!" role="button"
+  ><i class="fab fa-linkedin-in me-2 "></i>Log in with Linkedin</a>
+</div>
+<div class="row mb-3 mx-2">
+<a class="btn btn-primary" style="background-color: #ac2bac" href="#!" role="button"
+  ><i class="fab fa-instagram me-2 "></i>Log in with Instagram</a>
+</div>
+<div class="row  mb-1 mx-2">
+
+<p class="ppara"> Why should I create an account ? 
+<a class="plink" href="{% url 'home:faqs' %}"> About us &  FAQs </a></p>
+<p class="ppara"> What's new? <a class="plink" href="#">Get notified </a>
+<p class="ppara"> By logging in , I agree to the  <a class="plink" href="#"> Terms and Conditions  </a> of PSC-Exam.com.</p>
+
+<div  class="modal fade"  id="exampleModal"  tabindex="-1"  aria-labelledby="exampleModalLabel"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+ {% endblock %}
+
+ 

@@ -1,0 +1,37 @@
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+.card-header {
+    background-color: #1B2E3C;
+}
+.card-header-tabs {
+    background-color: #057DCD;
+    color:#999;
+}
+.card-footer {
+    background-color:#BFD7ED;
+    color:#057DCD;
+    }
+.headings {
+    background-color: #057DCD;  
+
+}
+.plink{
+    color:#0C0C1E;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+.plink:hover{
+    color: #74112F;
+    font-weight: 500;
+}
+.ppara {
+    color: #74112F;
+    font-weight: 500;
+    
+}

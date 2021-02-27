@@ -1,0 +1,31 @@
+{% extends 'base_log.html' %}
+{% block content %}
+<div class="container" style= "margin-top: 110px;">
+
+<h1> Frequently Asked Questions </h1>
+<hr>
+
+<h3> What is this website about ? </h3>
+<p> PSC-Exam.com is a website that is absolutely free for aspirants of competitive exams in India. We intend to cater the needs of job seekers in various domains. Competitive exams are conducted for recruitment to the state and union Government jobs including banking sector. Here you can attempt model and mock tests to know where you stand in the competition.</p>
+<h3 class="mt-3"> Why should I register an account ? </h3>
+<p> On registering,  
+<ol>
+  <li>Get personalized notifications, the job lisitings that suit your age, qualification, category etc. </li>
+  <li>Know your improvements, get to know your score, weak points and strength. We suggest the fields of study where you can focus more on.</li> 
+  <li>Feedback on performance of each test.</li> 
+  <li>Revision for tests.</li> 
+  <li> Scheduled model exams before the original exams.</li> 
+  <li> Questions on current affairs updated regularly </li> 
+</ol> 
+<h3> Is my data safe? </h3>
+<p> PSC-Exam.com has a security policy to protect your data. No personal information of candidates, including phone number, email id etc. will be shared to any external agency without your prior approval.</p>
+
+<h3> Are we associated with any training or coaching agency/center ? </h3>
+<p> No. PSC-Exam.com has no connection with any training or coaching center. We don't provide any candidate information to any training center or agency. However, training centers can advertise at PSC-Exam.com subject to required scrutiny.</p>
+
+<h3> Can I contribute to PSC-Exam.com? </h3>
+<p> We welcome your contributions in terms of questions, support and help in providing information to the candidates. You can submit your questions and queries.</p>
+
+<a class="plink" href = "{% url 'home:index' %}"><i class="fas fa-arrow-circle-left"></i> Back to Home </a>
+</div>
+{% endblock %}

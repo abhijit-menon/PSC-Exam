@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+ {% block signupform %} 
+ <h1> Welcome {{ user.username }}
+ {{ user.first_name }} {{ user.last_name }}
+ <form method="post" action="{% url 'social:disconnect' 'facebook' %}">
+        {% csrf_token %}
+        <button type="submit">Disconnect from Facebook</button>
+      </form>
+{% endblock %}
