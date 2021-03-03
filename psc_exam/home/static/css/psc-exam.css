@@ -5,33 +5,34 @@
 
     /* the rest of your styling */
 }
+
 .card-header {
-    background-color: #1B2E3C;
+    background-color: #1B2E3C !important;
 }
 .card-header-tabs {
-    background-color: #057DCD;
+    background-color: #057DCD !important;
     color:#999;
 }
 .card-footer {
-    background-color:#BFD7ED;
-    color:#057DCD;
+    background-color:#BFD7ED !important;
+    color:#057DCD !important;
     }
 .headings {
-    background-color: #057DCD;  
+    background-color: #057DCD !important;  
 
 }
 .plink{
-    color:#0C0C1E;
-    font-weight: 700;
-    text-decoration: none;
+    color:#0C0C1E !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
 
 }
 .plink:hover{
-    color: #74112F;
-    font-weight: 500;
+    color: #74112F!important;
+    font-weight: 500!important;
 }
 .ppara {
-    color: #74112F;
-    font-weight: 500;
+    color: #74112F !important;
+    font-weight: 500 !important;
     
 }

@@ -17,3 +17,8 @@ def home(request):
 
 def faqs(request):
     return render(request, 'home/faq.html')
+
+def user_home(request):
+    context = { "user":  "Abhijit V",                
+                 }
+    return render(request,'home/user_home.html', context)
