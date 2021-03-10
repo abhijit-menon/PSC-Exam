@@ -3,12 +3,17 @@ from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login,authenticate
 from .forms import RegistrationForm
-
+from .models import Question
 # Create your views here.
+
 def index(request):
     form = RegistrationForm()
+    q = Question.objects.all
+    print(type(q))
+    
     context = { "title":  "PSC-Exam",
                 "form": form,
+                "question": q
                  }
     return render(request, 'home/index.html', context)
 
